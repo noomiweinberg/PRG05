@@ -79,13 +79,15 @@
                 </div>
             @endif
 
+
+
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome
+                    Add news
                 </div>
 
                 <div class="links">
-                    <a href="{{ route('newsoverview')  }}">News Overview</a>
+                    <a href="{{ route('home')  }}">Home</a>
                     <a href="{{ route('newsdetail')  }}">News Details</a>
                     <a href="{{ route('newsadd')  }}">Add News</a>
                 </div>

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>News Overview</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -79,14 +79,16 @@
                 </div>
             @endif
 
+
+
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome
+                    News Detail
                 </div>
 
                 <div class="links">
+                    <a href="{{ route('home')  }}">Home</a>
                     <a href="{{ route('newsoverview')  }}">News Overview</a>
-                    <a href="{{ route('newsdetail')  }}">News Details</a>
                     <a href="{{ route('newsadd')  }}">Add News</a>
                 </div>
             </div>

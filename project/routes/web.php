@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', 'HomeController@show')->name ('home');
+Route::get('/newsoverview', 'NewsOverviewController@show')->name ('newsoverview');
+Route::get('/newsdetail', 'NewsDetailController@show')->name ('newsdetail');
+Route::get('/newsadd', 'NewsAddController@show')->name ('newsadd');
