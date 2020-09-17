@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2021a32e-37eb-4025-b3e9-b94d19499e6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/NewsAddController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/NewsDetailController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/NewsOverviewController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/newsadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/newsdetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/newsoverview.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/NewsItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/NewsItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

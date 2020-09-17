@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Think Before You Ink - @yield('title')</title>
+    <title>Think Before You Ink @yield('title')</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 </head>
 
@@ -55,6 +55,11 @@
     .m-b-md {
         margin-bottom: 30px;
     }
+
+    img.card-img {
+    width: 400px;
+    }
+
 </style>
 
 <body>

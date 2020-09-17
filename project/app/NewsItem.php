@@ -13,22 +13,36 @@ class NewsItem
     const ITEMS = [
         [
             "id" => 1,
-            "title" => "Vandaag is er iets gebeurd",
-            "description" => "Neuter cursus tandem promissios nix est. When drying puréed margerines, be sure they are room temperature. Sonic shower, pattern, and advice.",
-            "image" => "http://lorempixel.com/400/200/business/"
+            "title" => "Black & Grey Realism",
+            "description" => "Black & grey realistic portret of a woman with a jaguar's head. ",
+            "image" => "https://www.inkedmag.com/.image/t_share/MTU5MDMzMDQwNTI3NzYzMjI0/yz-asencio.png"
         ],
         [
             "id" => 2,
-            "title" => "Iets met techniek",
-            "description" => "Neuter cursus tandem promissios nix est. When drying puréed margerines, be sure they are room temperature. All occult visitors meet each other, only celestine saints have a courage.",
-            "image" => "http://lorempixel.com/400/200/technics/"
+            "title" => "Japanese",
+            "description" => "Japanese full color tattoo of koi fish.",
+            "image" => "https://i.pinimg.com/736x/47/95/b4/4795b4b42a197f555dae71605fdfa896.jpg"
         ],
         [
             "id" => 3,
-            "title" => "Sporten is belangrijk",
-            "description" => "Neuter cursus tandem promissios nix est. When drying puréed margerines, be sure they are room temperature. The mighty bung hole calmly robs the wave.",
-            "image" => "http://lorempixel.com/400/200/sports/"
-        ]
+            "title" => "Traditional",
+            "description" => "Traditional colorful tattoo of a black jaguar with a rose.",
+            "image" => "https://tattmag.com/wp-content/uploads/2020/06/American-Traditional-Panther-Tattoo-2.jpg"
+        ],
+
+        [
+        "id" => 4,
+        "title" => "Geometrical",
+        "description" => "No color Minimalistic Geometrical tattoo. ",
+        "image" => "https://www.beautifulwiki.com/wp-content/uploads/2019/01/112-Breathtaking-Minimalist-Geometric-Tattoo-Designs_35.jpeg"
+    ],
+
+        [
+        "id" => 5,
+        "title" => "New School",
+        "description" => "Very colorful New School tattoo of Rick (from Rick & Morty).",
+        "image" => "https://www.inkedmag.com/.image/c_fit%2Ccs_srgb%2Cq_auto:good%2Cw_620/MTU5MjMyNTg3MTIwNzgwNTAy/screen-shot-2018-10-17-at-102427-am.png"
+    ]
     ];
 
     /**

@@ -2,7 +2,7 @@
 
 @section ('content')
     <header class="jumbotron">
-        <h1 class="modal-title float-left">News</h1>
+        <h1 class="modal-title float-left">Tattoo feed</h1>
         <a class="nav-link float-right" href="{{route('news.create')}}">Maak een nieuwsbericht aan</a>
     </header>
     <div class="container">
