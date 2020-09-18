@@ -1,20 +1,24 @@
-@extends ('layouts.app)
+@extends ('layouts.app')
 
 @section ('content')
     <header class="jumbotron">
         @if($newsItem)
-            <h1 class="modal-title float-left">{{$newsItem['title']}}</h1>
+            <h2 class="head">{{$newsItem['description']}}</h2>
             @else
         <h1 class="modal-title float-left">{{$error}}</h1>
             @endif
-        <a class="nav-link float-right" href="{{route ('news')}}">Terug naar nieuwsoverzicht</a>
+        <div id="link-container">
+        <a href="{{route ('news')}}">Terug naar tattoo feed</a>
+        </div>
     </header>
+
+
 
     <div class="container">
         @if ($newsItem)
             <article>
-                <p>{{$newsItem['description']}}</p>
-                <img src="{{$newsItem['image']}}" alt="{{$newsItem['title']}}"/>
+                <img class= "detail" src="{{$newsItem['image']}}" alt="{{$newsItem['title']}}"/>
+                <p class="card-text">{{$newsItem['details']}}</p>
             </article>
             @endif
     </div>

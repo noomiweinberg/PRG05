@@ -1,10 +1,12 @@
-@extends ('layouts.app)
+@extends ('layouts.app')
 
 @section ('content')
 
     <header class="jumbotron">
-        <h1 class="modal-title float left">Voeg een nieuwsbericht toe</h1>
-        <a class="nav-link float-right" href="{{route('news')}}">Terug naar nieuwsoverzicht</a>
+        <h2 class="head">Voeg een nieuwe tattoo toe</h2>
+        <div id="link-container">
+        <a href="{{route('news')}}">Terug naar tattoofeed</a>
+        </div>
     </header>
 
     <div class="container">
@@ -28,7 +30,7 @@
                 <label for="image">Afbeelding</label>
                 <input type="text" class="form-control" id="image" name="image"/>
             </div>
-            <button type="submit" class="btn-primary btn-block">Bericht opslaan</button>
+            <button type="submit" class="btn-primary btn-block">Tattoo opslaan</button>
 
 
         </form>

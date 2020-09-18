@@ -17,7 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('home', 'HomeController@show')->name ('home');
 Route::get('news', 'NewsItemController@index')->name ('news');
 Route::get('news/create', 'NewsItemController@create')->name ('news.create');
 Route::get('news/store', 'NewsItemController@store')->name ('news.store');

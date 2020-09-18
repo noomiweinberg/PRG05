@@ -1,9 +1,17 @@
 @extends ('layouts.app')
 
+@section('sidebar')
+    <header class="jumbotron">
+    <h1 class="name">Think before you ink</h1>
+    </header>
+@endsection
+
 @section ('content')
     <header class="jumbotron">
-        <h1 class="modal-title float-left">Tattoo feed</h1>
-        <a class="nav-link float-right" href="{{route('news.create')}}">Maak een nieuwsbericht aan</a>
+        <h2 class="head">Tattoo feed</h2>
+        <div id="link-container">
+        <a href="{{route('news.create')}}">Voeg een nieuwe tattoo toe</a>
+        </div>
     </header>
     <div class="container">
         @if ($message = Session::get('success'))
@@ -14,10 +22,13 @@
         <div class="row">
             @foreach ($newsItems as $newsItem)
                 <div class="col sm card border-0">
-                    <h2 class="card-title">{{$newsItem['title']}}</h2>
-                    <p class="card-text">{{$newsItem['description']}}</p>
+                    <h3 class="card-title">{{$newsItem['title']}}</h3>
                     <img class="card-img" src="{{$newsItem['image']}}" alt="{{$newsItem['title']}}">
-                    <a class = "btn btn-light" href="{{route('news.show', $newsItem['id'])}}">Lees meer</a>
+                    <p class="card-text">{{$newsItem['description']}}</p>
+
+                    <div id="link2-container">
+                    <a href="{{route('news.show', $newsItem['id'])}}">Tattoo details</a>
+                    </div>
                 </div>
                 @endforeach
         </div>

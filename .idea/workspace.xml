@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2021a32e-37eb-4025-b3e9-b94d19499e6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/project/public/images/favicon-16x16.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/app/NewsItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/NewsItem.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +29,18 @@
   <component name="ProjectId" id="1hV4II2tlHOHCU6EbIENwPBEo4k" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PRG05-tentamenopdracht" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/project/resources/views/layouts/images" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views\layouts\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\public" />
+      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views\layouts\images" />
+      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project" />
+      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views\news-items" />
       <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views" />
-      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views\news" />
     </key>
   </component>
   <component name="RunDashboard">
