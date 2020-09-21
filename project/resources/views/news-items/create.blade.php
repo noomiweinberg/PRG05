@@ -3,9 +3,9 @@
 @section ('content')
 
     <header class="jumbotron">
-        <h2 class="head">Voeg een nieuwe tattoo toe</h2>
+        <h2 class="head">Add a new tattoo</h2>
         <div id="link-container">
-        <a href="{{route('news')}}">Terug naar tattoofeed</a>
+        <a href="{{route('news')}}">Back to tattoofeed</a>
         </div>
     </header>
 
@@ -13,21 +13,21 @@
         <form method="post" action="{{route('news.store')}}">
             @csrf
             <div class="form-group">
-                <label for="title">Titel</label>
+                <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" name="title"/>
                 @if ($errors->has ('title'))
                     <span class="alert-danger form-check-inline">{{$errors->first('title')}}</span>
             @endif
             </div>
             <div class="form-group">
-                <label for="description">Beschrijving</label>
+                <label for="description">Description</label>
                 <input style="height: 100px;" type="text" class="form-control" id="description" name="description"/>
                 @if ($errors->has('description'))
                     <span class="alert-danger form-check-inline">{{$errors->first('description')}}</span>
             @endif
             </div>
             <div class="form-group">
-                <label for="image">Afbeelding</label>
+                <label for="image">Image</label>
                 <input type="text" class="form-control" id="image" name="image"/>
             </div>
             <div class="form-group">
@@ -37,7 +37,7 @@
                     <span class="alert-danger form-check-inline">{{$errors->first('details')}}</span>
                 @endif
                 </br>
-            <button type="submit" class="btn-primary btn-block">Tattoo opslaan</button>
+            <button type="submit" class="btn-primary btn-block">Save tattoo</button>
 
             </div>
         </form>

@@ -10,7 +10,7 @@
     <header class="jumbotron">
         <h2 class="head">Tattoo feed</h2>
         <div id="link-container">
-        <a href="{{route('news.create')}}">Voeg een nieuwe tattoo toe</a>
+        <a href="{{route('news.create')}}">Add a new tattoo</a>
         </div>
     </header>
     <div class="container">
