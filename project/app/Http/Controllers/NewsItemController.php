@@ -50,9 +50,10 @@ class NewsItemController extends Controller
         $newsItem->title = $request->get('title');
         $newsItem->description = $request->get('description');
         $newsItem->image = $request->get ('image');
+        $newsItem->details = $request->get ('details');
 
         $newsItem->save();
-        return redirect ('news')->with ('success', 'Bericht is opgeslagen!');
+        return redirect ('news')->with ('success', 'Tattoo saved!');
     }
 
 //    /**

@@ -19,7 +19,7 @@ class CreateNewsItemsTable extends Migration
             $table->text('description');
             $table->text('details');
             $table->string('image');
-            $table->foreignId("category_id");
+            $table->foreignId("category_id")->nullable();
             $table->timestamps();
         });
     }

@@ -19,7 +19,7 @@
                 <strong>{{ $message }}</strong>
             </div>
             @endif
-        <div class="row">
+        <div class="newsitem">
             @foreach ($newsItems as $newsItem)
                 <div class="col sm card border-0">
                     <h3 class="card-title">{{$newsItem['title']}}</h3>

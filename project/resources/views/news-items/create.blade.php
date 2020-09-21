@@ -13,7 +13,7 @@
         <form method="post" action="{{route('news.store')}}">
             @csrf
             <div class="form-group">
-                <label for="title">Titel:</label>
+                <label for="title">Titel</label>
                 <input type="text" class="form-control" id="title" name="title"/>
                 @if ($errors->has ('title'))
                     <span class="alert-danger form-check-inline">{{$errors->first('title')}}</span>
@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
                 <label for="description">Beschrijving</label>
-                <input type="text" class="form-control" id="description" name="description"/>
+                <input style="height: 100px;" type="text" class="form-control" id="description" name="description"/>
                 @if ($errors->has('description'))
                     <span class="alert-danger form-check-inline">{{$errors->first('description')}}</span>
             @endif
@@ -30,9 +30,16 @@
                 <label for="image">Afbeelding</label>
                 <input type="text" class="form-control" id="image" name="image"/>
             </div>
+            <div class="form-group">
+                <label for="details">Details</label>
+                <input style="height: 100px;" type="text" class="form-control" id="details" name="details"/>
+                @if ($errors->has('details'))
+                    <span class="alert-danger form-check-inline">{{$errors->first('details')}}</span>
+                @endif
+                </br>
             <button type="submit" class="btn-primary btn-block">Tattoo opslaan</button>
 
-
+            </div>
         </form>
     </div>
     @endsection
