@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\NewsItem;
 use Illuminate\Http\Request;
 
@@ -15,10 +16,7 @@ class NewsItemController extends Controller
     public function index()
     {
         $newsItems = NewsItem::all();
-        return view ('news-items.index',[
-            'newsItems' => $newsItems
-
-        ]);
+        return view ('news-items.index',compact('newsItems'));
     }
 
     /**
@@ -28,7 +26,8 @@ class NewsItemController extends Controller
      */
     public function create()
     {
-        return view ('news-items.create');
+        $categories = Category::all();
+        return view ('news-items.create', compact('categories'));
     }
 
     /**
@@ -40,17 +39,21 @@ class NewsItemController extends Controller
     public function store(Request $request)
     {
         $request ->validate([
+            'category' => 'required',
             'title' => 'required',
             'description' => 'required',
+            'image' => 'required'
 
 
         ]);
 
         $newsItem = new Newsitem();
+        $newsItem->category_id = $request->get('category');
         $newsItem->title = $request->get('title');
         $newsItem->description = $request->get('description');
         $newsItem->image = $request->get ('image');
-        $newsItem->details = $request->get ('details');
+
+
 
         $newsItem->save();
         return redirect ('news')->with ('success', 'Tattoo saved!');

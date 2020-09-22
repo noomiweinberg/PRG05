@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2021a32e-37eb-4025-b3e9-b94d19499e6d" name="Default Changelist" comment="" />
+    <list default="true" id="2021a32e-37eb-4025-b3e9-b94d19499e6d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/NewsItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/NewsItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/NewsItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/NewsItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/database/migrations/2020_09_21_103214_create_news_items_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +54,13 @@
         <item name="MySQL" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="laravel-demo: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="laravel-demo: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="categories: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />

@@ -3,7 +3,7 @@
 @section ('content')
     <header class="jumbotron">
         @if($newsItem)
-            <h2 class="head">{{$newsItem['description']}}</h2>
+            <h2 class="head">{{$newsItem['title']}}</h2>
             @else
         <h1 class="modal-title float-left">{{$error}}</h1>
             @endif
@@ -17,8 +17,8 @@
     <div class="container">
         @if ($newsItem)
             <article>
-                <img class= "detail" src="{{$newsItem['image']}}" alt="{{$newsItem['title']}}"/>
-                <p class="card-text">{{$newsItem['details']}}</p>
+                <img class= "detail" src="{{$newsItem['image']}}" alt="{{$newsItem['category']}}"/>
+                <p class="card-text">{{$newsItem['description']}}</p>
             </article>
             @endif
     </div>

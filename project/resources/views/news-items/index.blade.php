@@ -20,16 +20,18 @@
             </div>
             @endif
         <div class="newsitem">
+
             @foreach ($newsItems as $newsItem)
                 <div class="col sm card border-0">
-                    <h3 class="card-title">{{$newsItem['title']}}</h3>
-                    <img class="card-img" src="{{$newsItem['image']}}" alt="{{$newsItem['title']}}">
-                    <p class="card-text">{{$newsItem['description']}}</p>
+                    <h3 class="card-title">{{$newsItem->category->title}}</h3>
+                    <img class="card-img" src="{{$newsItem->image}}" alt="{{$newsItem->title}}">
+                    <p class="card-text">{{$newsItem->title}}</p>
 
                     <div id="link2-container">
-                    <a href="{{route('news.show', $newsItem['id'])}}">Tattoo details</a>
+                    <a href="{{route('news.show', $newsItem->id)}}">Tattoo details</a>
                     </div>
                 </div>
+
                 @endforeach
         </div>
     </div>
