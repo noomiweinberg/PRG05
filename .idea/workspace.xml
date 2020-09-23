@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2021a32e-37eb-4025-b3e9-b94d19499e6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/project/resources/views/news-items/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/Homecontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/Homecontroller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/NewsItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/NewsItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/NewsItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/NewsItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/migrations/2020_09_21_103214_create_news_items_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -197,15 +200,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/project/resources/views/layouts/images" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views\layouts\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views\news-items" />
       <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\public" />
       <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views\layouts\images" />
       <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project" />
-      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views\news-items" />
       <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp2\htdocs\PRG05 (GIT)\PRG05\project\resources\views\layouts\images" />
     </key>
   </component>
   <component name="RunDashboard">

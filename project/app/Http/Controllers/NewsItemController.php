@@ -15,8 +15,8 @@ class NewsItemController extends Controller
      */
     public function index()
     {
-        $newsItems = NewsItem::all();
-        return view ('news-items.index',compact('newsItems'));
+//        $newsItems = NewsItem::all();
+//        return view ('news-items.index',compact('newsItems'));
     }
 
     /**
@@ -55,8 +55,9 @@ class NewsItemController extends Controller
 
 
 
+
         $newsItem->save();
-        return redirect ('news')->with ('success', 'Tattoo saved!');
+        return redirect ('home')->with ('success', 'Tattoo saved!');
     }
 
 //    /**

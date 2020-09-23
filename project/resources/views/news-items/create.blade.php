@@ -5,7 +5,7 @@
     <header class="jumbotron">
         <h2 class="head">Add a new tattoo</h2>
         <div id="link-container">
-        <a href="{{route('news')}}">Back to tattoofeed</a>
+        <a href="{{route('home')}}">Back to tattoofeed</a>
         </div>
     </header>
 
@@ -48,7 +48,7 @@
             </div>
 
                 </br>
-            <button type="submit" class="btn-primary btn-block">Save tattoo</button>
+            <button type="submit" class="btn-primary btn-block" style="font-size: 30px;">Save tattoo</button>
 
 
         </form>

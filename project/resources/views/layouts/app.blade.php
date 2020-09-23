@@ -9,7 +9,7 @@
 <style>
     html, body {
         background-color: #F5F5DC;
-        color: #636b6f;
+        color: 	#696969;
         font-family: "Lobster", sans-serif;
         font-size: 20px;
         font-weight: 200;
@@ -20,16 +20,20 @@
     h1.name {
         text-align: center;
         font-size: 100px;
+        color: #2F4F4F;
     }
 
     h2.head {
         text-align: center;
-        font-size: 80px;
+        font-size: 90px;
+        color: #2F4F4F;
     }
 
     h3.card-title {
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
+        color: #2F4F4F;
+        margin-bottom: 50px;
     }
 
     .full-height {
@@ -76,7 +80,7 @@
     }
 
     img.card-img {
-        width: 400px;
+        width: 500px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -84,7 +88,7 @@
 
     p.card-text {
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
         margin-top: 20px;
     }
 
@@ -100,12 +104,13 @@
     #link-container {
         margin-top: 50px;
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     #link2-container {
         text-align: center;
         font-size: 25px;
+        margin-bottom: 100px;
     }
 
     div.form-group {
