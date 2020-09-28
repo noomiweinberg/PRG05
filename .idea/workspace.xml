@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2021a32e-37eb-4025-b3e9-b94d19499e6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project/resources/views/news-items/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/Homecontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/Homecontroller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/NewsItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/NewsItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +67,13 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -198,6 +198,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/project/resources/views/layouts/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
