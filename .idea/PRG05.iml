@@ -32,6 +32,7 @@
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/justinrainbow/json-schema" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/project/vendor/laravel/ui" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/project/vendor/league/mime-type-detection" />

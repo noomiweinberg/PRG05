@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.master')
 
-        <title>Laravel</title>
+@section('content')
+    <div class="container">
 
 
-    </head>
-    <body>
+        <div class="card-text">
 
+            {{ __('You are logged out!') }}
+        </div>
+    </div>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Welcome
-                </div>
+    <div class="backbutton">
+        <a class="btn btn-link" href="{{ route('news') }}" style="font-size: 30px;">
+            {{ __('Back to homepage') }}
+        </a>
+    </div>
 
-                <div class="links">
-{{--                    <a href="{{ route('newsoverview')  }}">News Overview</a>--}}
-{{--                    <a href="{{ route('newsdetail')  }}">News Details</a>--}}
-{{--                    <a href="{{ route('newsadd')  }}">Add News</a>--}}
-                </div>
-            </div>
-
-    </body>
-</html>
+@endsection

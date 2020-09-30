@@ -18,7 +18,13 @@ Route::get('/', function () {
 });
 Route::get('home', 'HomeController@show')->name('home');
 
-Route::get('news', 'NewsItemController@index')->name ('news');
-Route::get('news/create', 'NewsItemController@create')->name ('news.create');
+Route::get('news', 'CategoryController@show')->name ('news');
+
+Route::get('news/create', 'NewsItemController@create')->name ('news.create')->middleware('auth');
 Route::post('news/store', 'NewsItemController@store')->name ('news.store');
 Route::get('news/{id}', 'NewsItemController@show')->name('news.show');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+

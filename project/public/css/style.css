@@ -108,3 +108,41 @@ div.form-group {
     font-size: 30px;
     margin-top: -10px;
 }
+
+.register {
+    position: absolute;
+    top: 80px;
+    right: 16px;
+    font-size: 40px;
+}
+
+.login {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 40px;
+}
+
+h1.log-in {
+    text-align: left;
+    font-size: 90px;
+    color: #2F4F4F;
+    margin-bottom: 70px;
+}
+
+.logout {
+    position: absolute;
+    top: 150px;
+    right: 16px;
+    font-size: 40px;
+}
+
+.card-text {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.backbutton{
+    text-align: center;
+}

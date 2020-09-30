@@ -6,7 +6,7 @@ use App\Category;
 use App\NewsItem;
 use Illuminate\Http\Request;
 
-class Homecontroller extends Controller
+class CategoryController extends Controller
 {
     public function show ()
     {
@@ -15,6 +15,6 @@ class Homecontroller extends Controller
         $categories = Category::all();
 
         //    data  meegeven aan de view
-        return view ('news-items/home', compact ('categories'));
+        return view ('news-items/index', compact ('categories'));
     }
 }

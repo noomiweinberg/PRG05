@@ -1,4 +1,4 @@
-@extends ('layouts.app')
+@extends ('layouts.master')
 
 @section ('content')
     <header class="jumbotron">
@@ -8,7 +8,7 @@
         <h1 class="modal-title float-left">{{$error}}</h1>
             @endif
         <div id="link-container">
-        <a href="{{route ('home')}}">Back to tattoo feed</a>
+        <a href="{{route ('news')}}">Back to tattoo feed</a>
         </div>
     </header>
 

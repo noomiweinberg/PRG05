@@ -1,11 +1,11 @@
-@extends ('layouts.app')
+@extends ('layouts.master')
 
 @section ('content')
 
     <header class="jumbotron">
         <h2 class="head">Add a new tattoo</h2>
         <div id="link-container">
-        <a href="{{route('home')}}">Back to tattoofeed</a>
+        <a href="{{route('news')}}">Back to tattoofeed</a>
         </div>
     </header>
 
