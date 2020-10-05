@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Contracts\Likeable;
+use App\Concerns;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -29,12 +31,19 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|NewsItem whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|NewsItem whereUpdatedAt($value)
  */
-class NewsItem extends Model
+class NewsItem extends Model implements Likeable
 {
+    use Concerns\Likeable;
+
     public $fillable = ['title', 'description', 'image', 'category_id'];
 
-    public function category ()
+    public function category()
     {
         return $this->belongsTo(Category::class);
     }
 }
+
+
+
+
+

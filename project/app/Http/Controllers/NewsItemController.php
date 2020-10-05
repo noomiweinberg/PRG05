@@ -57,7 +57,7 @@ class NewsItemController extends Controller
 
 
         $newsItem->save();
-        return redirect ('home')->with ('success', 'Tattoo saved!');
+        return redirect ('news')->with ('success', 'Tattoo saved!');
     }
 
 //    /**
@@ -77,6 +77,12 @@ class NewsItemController extends Controller
 
         ]);
     }
+
+//    public function toggleFavorite($id) {
+//        $newsItem = Category::find($id);//get the article based on the id
+//        Auth::user()->toggleFavorite($newsItem);//add/remove the user from the favorite list
+//        return Redirect::to('newsItem/{$id}');//redirect back (optionally with a message)
+//    }
 
     /**
      * Show the form for editing the specified resource.

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +22,10 @@ Route::get('news', 'CategoryController@show')->name ('news');
 Route::get('news/create', 'NewsItemController@create')->name ('news.create')->middleware('auth');
 Route::post('news/store', 'NewsItemController@store')->name ('news.store');
 Route::get('news/{id}', 'NewsItemController@show')->name('news.show');
+
+
+Route::post('like', 'LikesController@like');
+Route::delete('like', 'LikesController@dislike');
 
 Auth::routes();
 

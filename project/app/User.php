@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Concerns;
 
 /**
  * App\User
@@ -34,6 +35,11 @@ use Illuminate\Notifications\Notifiable;
  */
 class User extends Authenticatable
 {
+
+    use Concerns\Likes;
+
+
+
     use Notifiable;
 
     /**
@@ -63,3 +69,4 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+

@@ -45,6 +45,23 @@
                         <img class="card-img" src="{{$newsItem->image}}" alt="{{$newsItem->title}}" >
                         <p class="card-text">{{$newsItem->title}}</p>
 
+
+                        @if(auth()->user() && !auth()->user()->hasLiked($newsItem))
+                            <form action="/like" method="post">
+                                @csrf
+                                <input type="hidden" name="likeable" value="{{ get_class($newsItem) }}">
+                                <input type="hidden" name="id" value="{{ $newsItem->id }}">
+                                <button type="submit" class="like">
+                                    Like
+                                </button>
+                            </form>
+                        @else
+                            <p class="afterlike"  disabled>
+                                {{ $newsItem->likes()->count() }} likes
+                            </p>
+                        @endif
+
+                        
                         <div id="link2-container">
                             <a href="{{route('news.show', $newsItem->id)}}">Tattoo details</a>
                         </div>
