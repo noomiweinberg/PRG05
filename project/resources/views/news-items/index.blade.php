@@ -27,6 +27,33 @@
         <div id="link-container">
             <a href="{{route('news.create')}}">Add a new tattoo</a>
         </div>
+
+{{--        <div class="dropdown">--}}
+{{--            <button class="dropbtn">Categories</button>--}}
+{{--            <div class="dropdown-content">--}}
+{{--                <a href="#" value="1">Black & Grey Realism</a>--}}
+{{--                <a href="#" value="2">Traditional</a>--}}
+{{--                <a href="#" value="3">New School</a>--}}
+{{--                <a href="#" value="4">Geometrical</a>--}}
+{{--                <a href="#" value="5">Irezumi (Japanese)</a>--}}
+{{--                <a href="#" value="6">Biomechanical</a>--}}
+{{--                <a href="#" value="7">Watercolor</a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+
+        <h4 class="category-title">Category Select</h4>
+        <div class="filter text-center" style="margin-top: 20px;">
+            <form method="post" action="{{route('news.filter')}}">
+            {{ csrf_field() }}
+            <select name="category_id">
+                <option value="all">All</option>
+                @foreach($categoriesMenu as $category)
+                    <option value="{{ $category->id }}">{{ $category->title }}</option>
+                @endforeach
+            </select>
+                <button type="submit" class="btn btn-primary" style="font-size: 20px;">Choose Category</button>
+            </form>
+        </div>
     </header>
 
     <div class="container">
@@ -39,6 +66,7 @@
         <div class="newsitem">
             @foreach($categories as $category)
                 <h3 class="card-title">{{ $category->title}}</h3>
+
                 @foreach($category->newsItems as $newsItem)
                     <div class="col sm card border-0">
 
@@ -61,7 +89,7 @@
                             </p>
                         @endif
 
-                        
+
                         <div id="link2-container">
                             <a href="{{route('news.show', $newsItem->id)}}">Tattoo details</a>
                         </div>

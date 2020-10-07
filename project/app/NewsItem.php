@@ -41,6 +41,12 @@ class NewsItem extends Model implements Likeable
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function getNewsItems()
+    {
+        return $this->hasOne(Category::class);
+    }
+
 }
 
 

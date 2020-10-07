@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::get('home', 'HomeController@show')->name('home');
 
 Route::get('news', 'CategoryController@show')->name ('news');
+Route::post('news/filter','CategoryController@filter')->name('news.filter');
 
 Route::get('news/create', 'NewsItemController@create')->name ('news.create')->middleware('auth');
 Route::post('news/store', 'NewsItemController@store')->name ('news.store');
@@ -30,4 +31,20 @@ Route::delete('like', 'LikesController@dislike');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//$categories = DB::table('categories')->select('id')->get();
+
+//Route::get('/', function () {
+//
+//    if (request()->has('categories')) {
+//        $newsItems=App\NewsItem::where('categories', request('categories'))->paginate(5);
+//    }
+//
+//    $newsItems = App\NewsItem::paginate(5);
+//    return view ('newsItems')->with('newsItems', $newsItems);
+//});
+
+//Route::get('news', 'NewsItemController@list')->name('news');
+
+
 
