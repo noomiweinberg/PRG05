@@ -32,19 +32,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//$categories = DB::table('categories')->select('id')->get();
-
-//Route::get('/', function () {
-//
-//    if (request()->has('categories')) {
-//        $newsItems=App\NewsItem::where('categories', request('categories'))->paginate(5);
-//    }
-//
-//    $newsItems = App\NewsItem::paginate(5);
-//    return view ('newsItems')->with('newsItems', $newsItems);
-//});
-
-//Route::get('news', 'NewsItemController@list')->name('news');
 
 
 

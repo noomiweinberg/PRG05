@@ -20,11 +20,7 @@ class NewsItemController extends Controller
 
     }
 
-//        public function filter (Request $categoryId)
-//    {
-//        $newsItems = NewsItem::where('category_id', '=', $categoryId)->get();
-//        return view ('news-items/index', compact($categoryId));
-//    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -119,11 +115,7 @@ class NewsItemController extends Controller
         //
     }
 
-//    public function newsItemsList() {
-//        $newsItems = NewsItem::orderBy('id', 'desc')->paginate(20);
-//        $categories = Category::all();
-//        return view('news', compact('newsItems', 'categories'));
-//    }
+
 
 
 }

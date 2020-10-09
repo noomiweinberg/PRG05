@@ -2,6 +2,8 @@
 
 @section ('content')
 
+    @can('create_newsItems')
+
     <header class="jumbotron">
         <h2 class="head">Add a new tattoo</h2>
         <div id="link-container">
@@ -53,4 +55,5 @@
 
         </form>
     </div>
+    @endcan
     @endsection

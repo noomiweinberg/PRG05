@@ -3,12 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2021a32e-37eb-4025-b3e9-b94d19499e6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/NewsItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/NewsItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/NewsItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/NewsItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/Like.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Like.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/views/news-items/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/project/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,13 +58,6 @@
         <item name="MySQL" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="laravel-demo: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="laravel-demo: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="categories: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />

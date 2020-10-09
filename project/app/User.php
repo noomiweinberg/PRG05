@@ -36,6 +36,7 @@ use App\Concerns;
 class User extends Authenticatable
 {
 
+
     use Concerns\Likes;
 
 
@@ -68,5 +69,6 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
 }
 

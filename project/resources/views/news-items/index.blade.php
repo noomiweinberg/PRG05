@@ -25,21 +25,12 @@
     <header class="jumbotron">
         <h2 class="head">Tattoo feed</h2>
         <div id="link-container">
+
+            @can('create_newsItems')
             <a href="{{route('news.create')}}">Add a new tattoo</a>
+                @endcan
         </div>
 
-{{--        <div class="dropdown">--}}
-{{--            <button class="dropbtn">Categories</button>--}}
-{{--            <div class="dropdown-content">--}}
-{{--                <a href="#" value="1">Black & Grey Realism</a>--}}
-{{--                <a href="#" value="2">Traditional</a>--}}
-{{--                <a href="#" value="3">New School</a>--}}
-{{--                <a href="#" value="4">Geometrical</a>--}}
-{{--                <a href="#" value="5">Irezumi (Japanese)</a>--}}
-{{--                <a href="#" value="6">Biomechanical</a>--}}
-{{--                <a href="#" value="7">Watercolor</a>--}}
-{{--            </div>--}}
-{{--        </div>--}}
 
         <h4 class="category-title">Category Select</h4>
         <div class="filter text-center" style="margin-top: 20px;">
@@ -73,20 +64,25 @@
                         <img class="card-img" src="{{$newsItem->image}}" alt="{{$newsItem->title}}" >
                         <p class="card-text">{{$newsItem->title}}</p>
 
-
                         @if(auth()->user() && !auth()->user()->hasLiked($newsItem))
+
                             <form action="/like" method="post">
                                 @csrf
+
                                 <input type="hidden" name="likeable" value="{{ get_class($newsItem) }}">
                                 <input type="hidden" name="id" value="{{ $newsItem->id }}">
+                                @can('like_newsItems')
                                 <button type="submit" class="like">
                                     Like
                                 </button>
+                                @endcan
                             </form>
                         @else
+
                             <p class="afterlike"  disabled>
                                 {{ $newsItem->likes()->count() }} likes
                             </p>
+
                         @endif
 
 
