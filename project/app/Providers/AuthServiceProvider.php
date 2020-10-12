@@ -40,5 +40,10 @@ class AuthServiceProvider extends ServiceProvider
             return $user->role_id == 2; // for users
         });
 
+        $this->registerPolicies();
+
+        Gate::define('delete_newsItems', function($user) {
+            return $user->role_id == 1; // for admin
+        });
     }
 }

@@ -89,6 +89,13 @@
                         <div id="link2-container">
                             <a href="{{route('news.show', $newsItem->id)}}">Tattoo details</a>
                         </div>
+
+                        @can('delete_newsItems')
+                        <div id="link3-container">
+                            <a href="{{route('news.delete', ['newsItem_id'=>$newsItem->id])}}" style="color:red;">Delete</a>
+                        </div>
+                            @endcan
+
                     </div>
                 @endforeach
             @endforeach

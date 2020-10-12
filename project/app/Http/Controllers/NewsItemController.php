@@ -107,12 +107,16 @@ class NewsItemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param int $id
-     * @return \Illuminate\Http\Response
+     * @param $news_items_id
+     * @return void
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function delete($news_items_id)
     {
-        //
+        $newsItem=NewsItem::where('id', $news_items_id)->first();
+        $newsItem->delete();
+        return redirect()->route('news')->with('success', 'Tattoo deleted!');
+
     }
 
 
