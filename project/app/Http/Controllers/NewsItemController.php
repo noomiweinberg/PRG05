@@ -89,7 +89,15 @@ class NewsItemController extends Controller
      */
     public function edit($id)
     {
-        //
+
+        $categoriesMenu = Category::all();
+
+        // get the newsItem
+        $data = NewsItem::find($id);
+
+        // show the edit form
+        return view('news-items.edit', compact('data', 'categoriesMenu'));
+
     }
 
     /**
@@ -101,7 +109,10 @@ class NewsItemController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = NewsItem::find($id);
+        $data->update($request->all());
+        return redirect()->route('news', compact('data'))->with('success', 'Tattoo updated!');
+
     }
 
     /**
@@ -111,6 +122,7 @@ class NewsItemController extends Controller
      * @return void
      * @throws \Exception
      */
+
     public function delete($news_items_id)
     {
         $newsItem=NewsItem::where('id', $news_items_id)->first();

@@ -106,10 +106,19 @@ img.detail {
 }
 
 #link3-container {
+     text-align: center;
+     font-size: 25px;
+     margin-bottom: 100px;
+     margin-top: -95px;
+    margin-left: -100px;
+}
+
+#link4-container {
     text-align: center;
     font-size: 25px;
     margin-bottom: 100px;
-    margin-top: -95px;
+    margin-top: -135px;
+    margin-left:110px;
 }
 
 div.form-group {

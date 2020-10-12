@@ -96,6 +96,12 @@
                         </div>
                             @endcan
 
+                        @can('edit_newsItems')
+                        <div id="link4-container">
+                            <a href="{{route('news.edit', $newsItem->id)}}"  style="color:red;">Edit</a>
+                        </div>
+                            @endcan
+
                     </div>
                 @endforeach
             @endforeach

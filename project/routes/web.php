@@ -33,5 +33,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('news/delete/{newsItem_id}', 'NewsItemController@delete')->name('news.delete')->middleware('auth');
+Route::get('news/edit/{id}', 'NewsItemController@edit')->name('news.edit')->middleware('auth');
+Route::put('news/{id}', 'NewsItemController@update')->name('news.update');
+
 
 
