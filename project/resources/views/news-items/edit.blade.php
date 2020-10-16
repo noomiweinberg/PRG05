@@ -17,16 +17,16 @@
         @csrf
         <div class="form-group">
 
-{{--            <label for="category">Category</label>--}}
-{{--        </br>--}}
-{{--            <select name="category_id">--}}
-{{--                <option value="all">All</option>--}}
-{{--                @foreach($categoriesMenu as $category)--}}
-{{--                    <option value="{{ $category->id }}">{{ $category->title }}</option>--}}
-{{--                @endforeach--}}
-{{--            </select>--}}
+            <label for="category">Category</label>
+        </br>
+            <select name="category_id">
+                <option value="all">All</option>
+                @foreach($categoriesMenu as $category)
+                    <option value="{{$category->id}} "{{$category->id == $data->category_id ? 'selected' : ''}}>{{$category['title']}}</option>
+                @endforeach
+            </select>
 
-{{--        </br>--}}
+        </br>
 
             <label for="title">Title</label>
             <input type="text" name="title" id="title" class="form-control" value="{{$data->title}}" />

@@ -51,5 +51,11 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('edit_newsItems', function($user) {
             return $user->role_id == 1; // for admin
         });
+
+        $this->registerPolicies();
+
+        Gate::define('toggle_newsItems', function($user) {
+            return $user->role_id == 1; // for admin
+        });
     }
 }

@@ -31,19 +31,36 @@
                 @endcan
         </div>
 
+        <h5 class="search-title">Search Bar</h5>
+        <div class="col-md-5" style="margin-left: 300px;">
+        <form method="get" action="{{route('news.search')}}">
+            <div class="input-group">
+            <input type="search" name="search" class="form-control" >
+                <span class="input-group-btn" >
+            <button type="submit" class="btn btn-primary" style="font-size: 20px;">Search</button>
+                </span>
+            </div>
+        </form>
+        </div>
+
+        </br>
+        </br>
 
         <h4 class="category-title">Category Select</h4>
         <div class="filter text-center" style="margin-top: 20px;">
+
             <form method="post" action="{{route('news.filter')}}">
             {{ csrf_field() }}
             <select name="category_id">
                 <option value="all">All</option>
                 @foreach($categoriesMenu as $category)
-                    <option value="{{ $category->id }}">{{ $category->title }}</option>
+                    <option value="{{ $category->id }}" >{{ $category->title }}</option>
+{{--                    <option value="{{ $category->id }}" @if (old('category_id') == $category->id) selected="selected" @endif>{{ $category->title }}</option>--}}
                 @endforeach
             </select>
                 <button type="submit" class="btn btn-primary" style="font-size: 20px;">Choose Category</button>
             </form>
+
         </div>
     </header>
 
@@ -101,6 +118,26 @@
                             <a href="{{route('news.edit', $newsItem->id)}}"  style="color:red;">Edit</a>
                         </div>
                             @endcan
+
+
+                        <div class="togglebutton">
+                        @if ($newsItem->color_status == 1)
+                            <p class="colorstatus">Color</p>
+                        @else
+                            <p>Black & Grey</p>
+                        @endif
+                            @can('toggle_newsItems')
+                        <form method="post" action="{{route('news.toggle',$newsItem->id)}}" id='toggleform'>
+                            @csrf
+                            <div class="form-group row" style="margin-left: 20px;">
+                                <label class="switch ml-3">
+                                    <input name="color_status" id="color_status" value="1" type="checkbox" onclick="submit()" @if($newsItem->color_status == 1) checked @endif>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </form>
+                                @endcan
+                        </div>
 
                     </div>
                 @endforeach

@@ -21,7 +21,6 @@ class NewsItemController extends Controller
     }
 
 
-
     /**
      * Show the form for creating a new resource.
      *
@@ -80,7 +79,6 @@ class NewsItemController extends Controller
     }
 
 
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -125,13 +123,37 @@ class NewsItemController extends Controller
 
     public function delete($news_items_id)
     {
-        $newsItem=NewsItem::where('id', $news_items_id)->first();
+        $newsItem = NewsItem::where('id', $news_items_id)->first();
         $newsItem->delete();
         return redirect()->route('news')->with('success', 'Tattoo deleted!');
 
     }
 
+    public function search(Request $request)
+    {
+        $search = $request->get('search');
+        $categoriesMenu = Category::all();
+        $categories = Category::where('title', 'like', '%' . $search . '%')->get();
+        return view('news-items/index', ['categories' => $categories, 'categoriesMenu' => $categoriesMenu]);
+    }
+
+    public function toggle(Request $request, $id)
+    {
+//        dd($request->all());
+        $color_status = $request->input('color_status');
+        $newsItem = NewsItem::find($id);
+        if (isset($color_status)) {
+            // available item
+            $newsItem->color_status = 1;
+            $newsItem->save();
+            return redirect('news')->with('success', 'Changed to color');
+        } else {
+            // not available item
+            $newsItem->color_status = 0;
+            $newsItem->save();
+            return redirect('news')->with('success', 'Changed to black & grey');
+        }
 
 
-
+    }
 }
