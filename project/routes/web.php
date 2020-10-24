@@ -17,6 +17,8 @@ Route::get('/', function () {
 });
 Route::get('home', 'HomeController@show')->name('home');
 
+//Route::resource('comments', 'CommentsController');
+Route::post('comments/store', 'CommentsController@store')->name('comments.store');
 Route::post('news/toggle/{id}','NewsItemController@toggle')->name('news.toggle');
 Route::get('news/search', 'NewsItemController@search')->name('news.search');
 Route::get('news', 'CategoryController@show')->name ('news');

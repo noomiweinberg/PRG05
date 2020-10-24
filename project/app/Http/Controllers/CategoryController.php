@@ -31,11 +31,6 @@ class CategoryController extends Controller
         return view('news-items/index', compact('categories', 'categoriesMenu'));
     }
 
-//    public function search(Request $request)
-//    {
-//        $search = $request->get('search');
-//        $newsItems = NewsItem::where('title', 'like', '%'.$search.'%')->paginate(5);
-//        return view('news-items/index', ['newsItems' => $newsItems]);
-//    }
+
 
 }

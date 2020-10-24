@@ -263,3 +263,7 @@ input:checked + .slider:before {
     margin-left: 35px;
 }
 
+.comment {
+    font-size: 40px;
+}
+

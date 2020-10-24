@@ -47,6 +47,23 @@ class NewsItem extends Model implements Likeable
         return $this->hasOne(Category::class);
     }
 
+//    public function comments()
+//    {
+//        return $this->hasMany('App\Comment');
+//    }
+
+    protected $guarded = [];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class, 'news_item_id');
+    }
+
 }
 
 

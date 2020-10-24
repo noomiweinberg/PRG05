@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Comment;
 use App\NewsItem;
 use Illuminate\Http\Request;
 
@@ -66,16 +67,21 @@ class NewsItemController extends Controller
 //     * @param  int  $id
 //     * @return \Illuminate\Http\Response
 //     */
-    public function show($id)
+    public function show(Request $request, $id)
     {
 
         $newsItem = NewsItem::find($id);
+//        $comments = Comment::all();
+        //dd($request->input('news_item_id'));
+        $comments = Comment::where('news_item_id', $id)->get();
+        //dd($comments);
 
+        return view('news-items/show', compact('newsItem', 'comments'));
 
-        return view('news-items.show', [
-            'newsItem' => $newsItem,
-
-        ]);
+//        return view('news-items.show', [
+//            'newsItem' => $newsItem, 'comments' => $comments,
+//
+//        ]);
     }
 
 
@@ -139,16 +145,15 @@ class NewsItemController extends Controller
 
     public function toggle(Request $request, $id)
     {
-//        dd($request->all());
         $color_status = $request->input('color_status');
         $newsItem = NewsItem::find($id);
         if (isset($color_status)) {
-            // available item
+            // color
             $newsItem->color_status = 1;
             $newsItem->save();
             return redirect('news')->with('success', 'Changed to color');
         } else {
-            // not available item
+            // black & grey
             $newsItem->color_status = 0;
             $newsItem->save();
             return redirect('news')->with('success', 'Changed to black & grey');
@@ -156,4 +161,5 @@ class NewsItemController extends Controller
 
 
     }
+
 }
