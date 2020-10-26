@@ -267,3 +267,8 @@ input:checked + .slider:before {
     font-size: 40px;
 }
 
+.message {
+    font-size: 40px;
+    color: red;
+}
+

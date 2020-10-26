@@ -57,25 +57,9 @@ class CommentsController extends Controller
         $newsItem->comments()->save($comment);
 
         return back();
+
     }
 
 
-
-//    public function store(Request $request)
-//    {
-//        $request->validate([
-//            'body' => 'required',
-//        ]);
-//
-//        $input = $request->all();
-//        $input['user_id'] = auth()->user()->id;
-//
-//        Comment::create($input);
-//
-//        return back();
-//    }
 }
 
-//$comments = Comment::all();
-//
-//return view('news-items.show', compact('comments'))->with('success', 'Comment added!');

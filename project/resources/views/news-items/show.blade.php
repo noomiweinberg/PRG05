@@ -42,7 +42,13 @@
                         <hr />
                     </div>
 
+    @can('message_hasEnoughLikes')
+        <h6 class="message">You must have liked at least 5 posts to comment on this post.</h6>
+    @endcan
+
                   @can('comment_newsItems')
+                      @can('hasEnoughLikes')
+
 
                     <div class="card-body">
                         <h5 class="comment">Leave a comment</h5>
@@ -59,11 +65,13 @@
                         </form>
 
                 </div>
+                    @endcan
+                    @endcan
             </div>
         </div>
     </div>
 
-    @endcan
+
 @endsection
 
 

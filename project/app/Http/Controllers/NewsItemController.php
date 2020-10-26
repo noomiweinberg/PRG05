@@ -71,17 +71,13 @@ class NewsItemController extends Controller
     {
 
         $newsItem = NewsItem::find($id);
-//        $comments = Comment::all();
-        //dd($request->input('news_item_id'));
+
         $comments = Comment::where('news_item_id', $id)->get();
-        //dd($comments);
+
 
         return view('news-items/show', compact('newsItem', 'comments'));
 
-//        return view('news-items.show', [
-//            'newsItem' => $newsItem, 'comments' => $comments,
-//
-//        ]);
+
     }
 
 

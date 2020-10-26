@@ -63,5 +63,31 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('comment_newsItems', function($user) {
             return $user->role_id == 2; // for user
         });
+
+
+
+        $this->registerPolicies();
+
+        Gate::define('hasEnoughLikes', function ($user) {
+            $totalLikes = count($user->likes);
+            if ($totalLikes > 4) {
+                return true;
+
+            }
+
+
+        });
+
+
+        $this->registerPolicies();
+
+        Gate::define('message_hasEnoughLikes', function($user) {
+            $totalLikes = count($user->likes);
+            if ($totalLikes < 5 && $user->role_id ==2){
+                return true;
+            }
+
+        });
+
     }
 }
